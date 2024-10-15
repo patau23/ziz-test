@@ -24,14 +24,14 @@ const Card = ({ item, addToCart, findCartItem }: any) => {
             </p>
           </div>
           <div className={styles.rating} title={item.rating.rate}>
-            {[...Array(Math.round(item.rating.rate))].map((e, i) => (
+            {[...Array(Math.round(item.rating.rate))].map((_, i) => (
               <StarIcon
                 key={`star-${i}`}
                 className={styles.starIcon}
                 aria-hidden="true"
               />
             ))}
-            {[...Array(5 - Math.round(item.rating.rate))].map((e, i) => (
+            {[...Array(5 - Math.round(item.rating.rate))].map((_, i) => (
               <StarIcon
                 key={`empty-star-${i}`}
                 className={styles.emptyStarIcon}

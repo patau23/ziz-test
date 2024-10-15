@@ -37,7 +37,7 @@ const ProductDetail = () => {
                   />
                 ))}
                 {[...Array(5 - Math.round(product?.rating?.rate))].map(
-                  (e, i) => (
+                  (_, i) => (
                     <StarIcon
                       key={`empty-star-${i}`}
                       className={styles.emptyStarIcon}

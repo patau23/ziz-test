@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useProduct } from "../../app/context/product";
 import styles from "./styles.module.css";
 import Spinner from "../../shared/ui/Spinner";
